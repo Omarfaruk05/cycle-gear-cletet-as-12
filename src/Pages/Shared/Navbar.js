@@ -1,7 +1,17 @@
+import { signOut } from 'firebase/auth';
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
+import auth from '../../firebase.init';
 
 const Navbar = ({children}) => {
+    const navigate = useNavigate();
+    const [user] = useAuthState(auth);
+
+    const logout = () => {
+        signOut(auth);
+        navigate('/login')
+    }
     return (
         <div class="drawer drawer-end">
             <input id="my-drawer-3" type="checkbox" class="drawer-toggle" /> 
@@ -20,7 +30,8 @@ const Navbar = ({children}) => {
                         <li><NavLink className='rounded-lg mx-2 text-white font-medium text-xl' to={"/blogs"}>Blogs</NavLink></li>
                         <li><NavLink className='rounded-lg mx-2 text-white font-medium text-xl' to={"/about"}>About</NavLink></li>
                         <li><NavLink className='rounded-lg mx-2 text-white font-medium text-xl' to={"/dashboard"}>Dashboard</NavLink></li>
-                        <li><NavLink className='rounded-lg mx-2 text-white font-medium text-xl' to={"/login"}>Login</NavLink></li>
+                        <li>{user? <button className='rounded-lg mx-2 text-white font-medium text-xl' onClick={logout}>SingOut</button> : <NavLink className='rounded-lg mx-2 text-white font-medium text-xl' to="/login">Login</NavLink>}</li>
+
                         </ul>
                     </div>
                 </div>
@@ -33,7 +44,8 @@ const Navbar = ({children}) => {
                         <li><NavLink className='rounded-lg mx-2 font-medium' to={"/blogs"}>Blogs</NavLink></li>
                         <li><NavLink className='rounded-lg mx-2 font-medium' to={"/about"}>About</NavLink></li>
                         <li><NavLink className='rounded-lg mx-2 font-medium' to={"/dashboard"}>Dashboard</NavLink></li>
-                        <li><NavLink className='rounded-lg mx-2 font-medium' to={"/login"}>Login</NavLink></li>
+                        <li>{user? <button className='rounded-lg mx-2 font-medium text-black ' onClick={logout}>SingOut</button> : <NavLink className='rounded-lg mx-2 font-medium' to="/login">Login</NavLink>}</li>
+
                 </ul>
                 
             </div>
