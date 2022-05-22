@@ -9,7 +9,6 @@
 - There has email varification system.
 - There has some protected route where without login you cannot see these and cannot go.
 - There has a forget password system.
--
 
 ## Techonology Used
 

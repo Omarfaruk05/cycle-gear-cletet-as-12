@@ -8,7 +8,7 @@ const Discover = () => {
               <div class="max-w-screen p-8 md:mx-24">
                 <h1 class="mb-5 text-3xl md:text-5xl font-sans  font-bold text-white ">Extraordinary Original Quality Product, Exceptional Payment system.</h1>
                 <h4 class="mb-5 text-md font-serif font-medium text-neutral lg:w-[600px] ">We are providing orginal cycle parts. Here you can find original shimano products.Here you can order at any time at any palce. Ovar all we provide our best services.</h4>
-                <button class="btn btn-primary text-white">Get Started</button>
+                <button class="btn btn-primary text-white">Discover More</button>
               </div>
             </div>
         </div>
