@@ -8,6 +8,9 @@ import Navbar from './Pages/Shared/Navbar';
 import Login from './Pages/Login/Login';
 import Footer from './Pages/Shared/Footer';
 import Register from './Pages/Login/Register';
+import Purchase from './Pages/Purchase/Purchase';
+import ProtectedRoute from './Pages/PortectedRoute/ProtectedRoute';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (
@@ -18,9 +21,18 @@ function App() {
           <Route path='/home' element={<HomePage></HomePage>}></Route>
           <Route path='/blogs' element={<Blogs></Blogs>}></Route>
           <Route path='/about' element={<About></About>}></Route>
-          <Route path='/dashboard' element={<Dashboard></Dashboard>}></Route>
+          <Route path='/dashboard' element={
+            <ProtectedRoute>
+              <Dashboard></Dashboard>
+            </ProtectedRoute>
+          }></Route>
           <Route path='/login' element={<Login></Login>}></Route>
           <Route path='/register' element={<Register></Register>}></Route>
+          <Route path='/purchase/:id' element={
+            <ProtectedRoute>
+              <Purchase></Purchase>
+            </ProtectedRoute>
+          }></Route>
         </Routes>
         <Footer></Footer>
       </Navbar>
