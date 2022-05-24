@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 const Product = ({product}) => {
     const navigate = useNavigate();
 
-    const {_id, productName, productQuantity, productImg, price} = product;
+    const {_id, productName,productQuantity, productImg, price} = product;
 
     const navigateToPurchase = id => {
         navigate(`/purchase/${id}`)
@@ -12,7 +12,7 @@ const Product = ({product}) => {
     return (
         <div class="card max-w-lg bg-base-100 shadow hover:shadow-2xl">
            <div className='p-2'>
-           <img className='h-72 md:h-60 lg:h-96 rounded-md' src={productImg} alt="cycle parts" />
+           <img className='h-72 md:h-60 lg:h-60 rounded-md' src={productImg} alt="cycle parts" />
            </div>
             <div class="card-body">
                 <h2 class="card-title text-2xl flex justify-center">{productName}

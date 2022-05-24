@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div className='bg-primary'>
+        <div className='bg-accent'>
             <div className='flex justify-between items-center mx-2 md:mx-8 lg:mx-16 my-8'>
                 <div>
                     <h5 className='text-white font-semibold text-lg'>Copyright © 2022 Dhaka, All rights reserved. Powered by Omar Faruk.</h5>
