@@ -3,6 +3,7 @@ import { useCreateUserWithEmailAndPassword, useSignInWithGoogle, useUpdateProfil
 import { useForm } from 'react-hook-form';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
+import useToken from '../../hooks/useToken';
 import Loading from '../Shared/Loading';
 
 const Register = () => {
@@ -20,6 +21,8 @@ const Register = () => {
 
     const [updateProfile, updating, updateError] = useUpdateProfile(auth);
 
+    const [token] = useToken(emailUser);
+
     if(emailLoading || updating){
         return <Loading></Loading>
     }
@@ -28,7 +31,7 @@ const Register = () => {
         errorElement = <p className='text-red-500 mb-1'><small>{emailError?.message || updateError?.message}</small></p>
     }
 
-    if(emailUser){
+    if(token){
         navigate('/home');
     }
 

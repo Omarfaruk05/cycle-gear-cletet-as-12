@@ -1,10 +1,11 @@
 import { async } from '@firebase/util';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { useForm } from "react-hook-form";
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import auth from '../../firebase.init';
+import useToken from '../../hooks/useToken';
 import Loading from '../Shared/Loading';
 
 const Login = () => {
@@ -25,6 +26,14 @@ const Login = () => {
     ] = useSignInWithEmailAndPassword(auth);
 
     const [sendPasswordResetEmail] = useSendPasswordResetEmail(auth);
+    
+    const [token] = useToken(googleUser || emailUser);
+
+    useEffect( () => {
+        if(token){
+            navigate(from, {replace: true});
+        }
+    }, [token, from, navigate])
 
     if(googleLoading || emailLoading){
         return <Loading></Loading>
@@ -32,10 +41,6 @@ const Login = () => {
 
     if(googleError || emailError){
         errorElement = <><p className='text-red-500 mb-1'><small>{googleError?.message || emailError?.message}</small></p></>
-    }
-
-    if(googleUser || emailUser){
-        navigate(from, {replace: true});
     }
 
     const onSubmit = (data) => {
@@ -106,8 +111,6 @@ const Login = () => {
                     </div>
                 </div>
             </div>
-            
-        <ToastContainer></ToastContainer>
         </div>
     );
 };

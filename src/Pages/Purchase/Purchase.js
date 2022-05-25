@@ -12,7 +12,7 @@ const Purchase = () => {
     let newQuantity;
     const {id} = useParams();
     const [user] = useAuthState(auth);
-    const { handleSubmit, register} = useForm();
+    const { handleSubmit, register, reset} = useForm();
 
     const { data: product, isLoading, refetch  } = useQuery('product', () =>fetch(`http://localhost:5000/product/${id}`).then(res=>res.json())
    )
@@ -28,6 +28,7 @@ const Purchase = () => {
 
    const onSubmit =(data) => {
        const name = data.name;
+       const productName = product.productName;
        const email = data.email;
        const address = data.address;
        const phoneNumber = data.phone;
@@ -41,7 +42,7 @@ const Purchase = () => {
        else{
            setErrorElemnet('');
            setButtonDisabled(false);
-           const purchasedProduct = {name, email, phoneNumber, address, quantity};
+           const purchasedProduct = {name, email, phoneNumber, address, productName, quantity};
 
            fetch(`http://localhost:5000/purchased`, {
                method: 'POST',
@@ -66,6 +67,7 @@ const Purchase = () => {
            .then(res => res.json())
            .then(data1 => {
             refetch();
+            reset();
            })
        }
    }

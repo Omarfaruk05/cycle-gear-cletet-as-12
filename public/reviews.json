@@ -1,31 +1,27 @@
 [
     
     {
-       "id":1,
         "name":"Rasel Hassan",
         "comment":"This websetes products are good. Orginial product.",
-        "rating":4,
-        "photo":" https://i.ibb.co/fFNPh3G/84391802-790230614818015-1081567817054027776-n.jpg"
+        "ratting":4,
+        "photo":"https://i.ibb.co/NYLLgCw/rasel.jpg"
     },
     {
-        "id":2,
-        "name":"Nymut Khan Tonmoy",
+        "name":"Nymur Khan Tonmoy",
         "comment":"I bought some parts. Here payment management is very clear.",
-        "rating":3.5,
-        "photo":"https://i.ibb.co/rf2VfSw/277101352-1663025654052715-5720472448425758299-n.jpg"
+        "ratting":3.5,
+        "photo":"https://i.ibb.co/XZ1mxvp/tonmoy.jpg"
     },
     {
-        "id":3,
         "name":"Shariful Islam",
         "comment":"Here I bought a frem. It's look good.",
-        "rating":5,
-        "photo":"https://i.ibb.co/GCkZzQM/243024261-160272746277654-187782624171606377-n-1.jpg"
+        "ratting":5,
+        "photo":"https://i.ibb.co/X4fqVhT/saiful.jpg"
     },
     {
-        "id":4,
         "name":"Abul Hasnat Hasib",
         "comment":"I am useing this website for 2 years. Nothing problem faced. ",
-        "rating":5,
-        "photo":"https://i.ibb.co/qWBL8w3/242175337-3020266398258967-4275203098983531915-n.jpg"
+        "ratting":5,
+        "photo":"https://i.ibb.co/gwpp0B1/hasib.jpg"
     }
 ]

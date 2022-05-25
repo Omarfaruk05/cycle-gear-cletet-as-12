@@ -3,7 +3,7 @@ import { faStar } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Review = ({review}) => {
-    const {name, comment, rating, photo} = review;
+    const {name, comment, ratting, photo} = review;
     
     return (
         <div className=''>
@@ -18,7 +18,7 @@ const Review = ({review}) => {
                     </p>
                     <p className='text-md '> <span className='text-primary font-semibold'>Comment:</span> {comment}<span className='text-secondary'>{}</span></p>
                     <Rating
-                    initialRating={rating}
+                    initialRating={ratting}
                     emptySymbol={<FontAwesomeIcon icon={faStar} />}
                     fullSymbol={<FontAwesomeIcon className='text-secondary' icon={faStar} />}
                     readonly
