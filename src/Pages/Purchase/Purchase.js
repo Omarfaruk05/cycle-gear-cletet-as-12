@@ -34,6 +34,7 @@ const Purchase = () => {
        const phoneNumber = data.phone;
        const quantity = data.quantity;
        newQuantity = quantity
+       const productPrice = product.price * quantity;
        if(product.minimumOrderQuantity > quantity || quantity > product.productQuantity){
           const error = <p> <small className='text-red-600'>You have to buy between  {product.minimumOrderQuantity}  to {product.productQuantity} products. </small></p>
           setErrorElemnet(error)
@@ -42,7 +43,7 @@ const Purchase = () => {
        else{
            setErrorElemnet('');
            setButtonDisabled(false);
-           const purchasedProduct = {name, email, phoneNumber, address, productName, quantity};
+           const purchasedProduct = {name, email, phoneNumber, address, productName, quantity, productPrice};
 
            fetch(`http://localhost:5000/purchased`, {
                method: 'POST',

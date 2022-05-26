@@ -3,7 +3,7 @@
         "id": 1,
         "minimumOrderQuantity": 100,
         "productName":"Maxxis Tyre",
-        "productImg":"https://i.ibb.co/512tVkB/MAXXIS-tyre.jpg",
+        "productImg":"https://i.ibb.co/84wp3PZ/MAXXIS-tyre.jpg",
         "productDetails":"MARATHON PLUS TIRE: The most puncture resistant pneumatic tire there is. The patented, 5 mm thick SmartGuard layer has a significant advantage in rolling resistance.  Also in the SmartGuard, we use a proportion of recycled rubber from old latex products. It now lasts much longer before deveolping unsightly cracks when subjected to use with insufficient air pressure. Due to its great properties Marathon Plus is the best choice for E-Bikes (E-25), WARRANTY: policy on all Schwalbe product purchased within North America. Our warranty term is 3 years following the original purchase date of the product, or 5 years from its production date - whichever occurs first.",
         "productQuantity":2000,
         "price":57
@@ -12,7 +12,7 @@
         "id": 2,
         "minimumOrderQuantity": 100,
         "productName":"Deore Chain Ring",
-        "productImg":"https://i.ibb.co/CzbDX8R/chainring.jpg",
+        "productImg":"https://i.ibb.co/5nXsj3W/shymano-casset.jpg",
         "productDetails":"Mount type: Direct Mount for Shimano, Teeth: 32, Weight: 60g,  Chain Compatibility: Drop-Stop ST for Shimano 12spd Hyperglide+ chains, Material 7075-T6 aluminum, Made in USA by Wolf Tooth Components",
         "productQuantity":5500,
         "price":19
@@ -21,7 +21,7 @@
         "id": 3,
         "minimumOrderQuantity": 100,
         "productName":"Deore Brake",
-        "productImg":"https://i.ibb.co/RpbyZLx/deore-brake.jpg",
+        "productImg":"https://i.ibb.co/wSNH338/deore-brake.jpg",
         "productDetails":"Lever: I-SPEC EV, Lever,Adjustability: 10 , Actuation: Servo Wave, Caliper: 2 piston, ICE TECHNOLOGIES, Mount Type: post","productQuantity":3500,
         "price":91
     },
@@ -29,7 +29,7 @@
         "id": 4,
         "minimumOrderQuantity": 100,
         "productName":"Deore Crank",
-        "productImg":"https://i.ibb.co/X4VGB36/deore-crank.jpg",
+        "productImg":"https://i.ibb.co/23Nyk04/deore-crank.jpg",
         "productDetails":"All new design is more rigid and efficient, Triple crankset removes any limits from your riding, New composite chainring teeth are stronger and more durable, Loose ratio gearing for smaller jumps between gears.",
         "productQuantity":1500,
         "price":247
@@ -38,7 +38,7 @@
         "id": 5,
         "minimumOrderQuantity": 100,
         "productName":"Deore Casset",
-        "productImg":"https://i.ibb.co/pX6V7vM/shymano-casset.jpg",
+        "productImg":"https://i.ibb.co/5nXsj3W/shymano-casset.jpg",
         "productDetails":"Hand built: 27-1/2\" 29\" Alloy Mountain Wheel set-Compatibility: Shimano/SRAM 8/9/10 speed, Rims: Vuelta 27mmm wide sleeved 6066 alloy disc only with stainless steel eyelets-Valve: Presta-Color: Black, Spokes: Vuelta round plain gauge stainless steel with alloy nipples-Lacing: Front 3 cross / Rear 3 cross (F32HxR32H), Hubs: Vuelta 2&1 mountain 6-bolt disc with Japanese EZO cartridge bearings (F2xR4), Thru axle kit with adaptors included, Extras: Vuelta alloy quick release skewers, axle adaptors; rear thru axle and nylon rim strips-Weight 27-1/2\": Front 809g/Rear 1043g = Pair 1951g",
         "productQuantity":4500,
         "price":199
@@ -47,7 +47,7 @@
         "id": 6,
         "minimumOrderQuantity": 100,
         "productName":"Deore Wheel Set",
-        "productImg":"https://i.ibb.co/c6X0GGd/wheel.jpg",
+        "productImg":"https://i.ibb.co/V3GV7cq/wheel.jpg",
         "productDetails":"Hand built: 27-1/2\" 29\" Alloy Mountain Wheel set-Compatibility: Shimano/SRAM 8/9/10 speed, Rims: Vuelta 27mmm wide sleeved 6066 alloy disc only with stainless steel eyelets-Valve: Presta-Color: Black, Spokes: Vuelta round plain gauge stainless steel with alloy nipples-Lacing: Front 3 cross / Rear 3 cross (F32HxR32H), Hubs: Vuelta 2&1 mountain 6-bolt disc with Japanese EZO cartridge bearings (F2xR4), Thru axle kit with adaptors included, Extras: Vuelta alloy quick release skewers, axle adaptors; rear thru axle and nylon rim strips-Weight 27-1/2\": Front 809g/Rear 1043g = Pair 1951g",
         "productQuantity":4500,
         "price":199

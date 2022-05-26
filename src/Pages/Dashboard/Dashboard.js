@@ -8,7 +8,7 @@ const Dashboard = () => {
     const [user] = useAuthState(auth);
     const [admin] = useAdmin(user);
     return (
-        <div>
+        <div className=' bg-base-300'>
             <div>
                 <div class="drawer drawer-mobile">
                     <input id="dashboard-sidebar" type="checkbox" class="drawer-toggle" />
@@ -25,6 +25,7 @@ const Dashboard = () => {
                         { admin && <>
                             <li><Link className='mb-2' to={"/dashboard/users"}>All Users</Link></li>
                             <li><Link className='mb-2' to={"/dashboard/addProduct"}>Add Product</Link></li>
+                            <li><Link className='mb-2' to={"/dashboard/manageProducts"}>Manage Products</Link></li>
 
                         </>}
                         </ul>

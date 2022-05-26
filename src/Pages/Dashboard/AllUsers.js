@@ -24,7 +24,7 @@ const AllUsers = () => {
                     <tr>
                         <th>NO.</th>
                         <th>User Email</th>
-                        <th>User Name</th>
+                        <th>User Status</th>
                     </tr>
                     </thead>
                     <tbody>

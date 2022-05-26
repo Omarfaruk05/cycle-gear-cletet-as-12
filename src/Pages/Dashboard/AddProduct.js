@@ -46,6 +46,9 @@ const AddProduct = () => {
                         toast.success('Product Added');
                         reset()
                     }
+                    else{
+                        toast.error('Failed to Add Product')
+                    }
                 })
             }
         })

@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { useQuery } from 'react-query';
+import Loading from '../Shared/Loading';
 import Product from './Product';
 
 const Products = () => {
-    const [products, setProducts] = useState([]);
-    
-    useEffect(() => {
-        fetch('http://localhost:5000/product')
-        .then(res=> res.json())
-        .then(data => setProducts(data))
-    },[])
+    const {data: products, isLoading} = useQuery('products', () => fetch('http://localhost:5000/manageProduct').then(res => res.json()));
+
+    if(isLoading){
+        return <Loading></Loading>
+    }
     return (
         <div className='my-16 px-4 lg:px-16 md:px-8 '>
             <h1 className='text-4xl font-medium text-primary text-center underline mb-12'>Our Products</h1>
