@@ -115,7 +115,7 @@ const CheckoutForm = ({payProduct, stripePromise}) => {
                         },
                     }}
                 />
-                <button className='btn btn-success text-white btn-sm mt-4' type="submit" disabled={!stripe || !clientSecret}>
+                <button className='btn btn-success text-white btn-sm mt-4' type="submit" disabled={!stripe || !clientSecret || success}>
                     Pay
                 </button> 
             </form>
