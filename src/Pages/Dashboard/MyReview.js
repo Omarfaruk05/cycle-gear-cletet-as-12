@@ -33,7 +33,7 @@ const MyReview = () => {
                 }
                 console.log(review)
 
-                fetch('http://localhost:5000/review', {
+                fetch('https://glacial-wave-27081.herokuapp.com/review', {
                     method: 'POST',
                     headers: {
                         'content-type': 'application/json',

@@ -13,7 +13,7 @@ const MyOrders = () => {
     const [user] = useAuthState(auth);
     const navigate = useNavigate();
 
-    const {data: myOrders, isLoading, refetch} = useQuery('myOrders', () => fetch(`http://localhost:5000/purchased?email=${user.email}`,
+    const {data: myOrders, isLoading, refetch} = useQuery('myOrders', () => fetch(`https://glacial-wave-27081.herokuapp.com/purchased?email=${user.email}`,
     {
         method: 'GET',
         headers: {

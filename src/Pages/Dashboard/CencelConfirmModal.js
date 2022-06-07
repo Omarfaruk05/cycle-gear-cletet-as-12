@@ -6,7 +6,7 @@ const CencelConfirmModal = ({cencelingProduct, setCencelingProduct, refetch}) =>
     const {_id, productName} =  cencelingProduct;
 
     const handleCencel = () => {
-        fetch(`http://localhost:5000/purchased/${_id}`, {
+        fetch(`https://glacial-wave-27081.herokuapp.com/purchased/${_id}`, {
           method: 'DELETE',
           headers: {
             'authorization': `Bearer ${localStorage.getItem('accessToken')}`

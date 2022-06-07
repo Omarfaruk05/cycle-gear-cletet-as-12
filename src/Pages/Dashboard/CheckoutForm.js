@@ -14,7 +14,7 @@ const CheckoutForm = ({payProduct, stripePromise}) => {
     const {_id, productPrice, email, name} = payProduct;
 
     useEffect( () => {
-        fetch('http://localhost:5000/create-payment-intent', {
+        fetch('https://glacial-wave-27081.herokuapp.com/create-payment-intent', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
@@ -79,7 +79,7 @@ const CheckoutForm = ({payProduct, stripePromise}) => {
                       transectionId: paymentIntent.id,
                       status: 'Pending'
                   }
-                  fetch(`http://localhost:5000/purchased/${_id}`, {
+                  fetch(`https://glacial-wave-27081.herokuapp.com/purchased/${_id}`, {
                       method: 'PATCH',
                       headers: {
                         'content-type': 'application/json',

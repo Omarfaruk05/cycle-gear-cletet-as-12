@@ -14,7 +14,7 @@ const Purchase = () => {
     const [user] = useAuthState(auth);
     const { handleSubmit, register, reset} = useForm();
 
-    const { data: product, isLoading, refetch  } = useQuery('product', () =>fetch(`http://localhost:5000/product/${id}`).then(res=>res.json())
+    const { data: product, isLoading, refetch  } = useQuery('product', () =>fetch(`https://glacial-wave-27081.herokuapp.com/product/${id}`).then(res=>res.json())
    )
 
    if(isLoading){
@@ -45,7 +45,7 @@ const Purchase = () => {
            setButtonDisabled(false);
            const purchasedProduct = {name, email, phoneNumber, address, productName, quantity, productPrice};
 
-           fetch(`http://localhost:5000/purchased`, {
+           fetch(`https://glacial-wave-27081.herokuapp.com/purchased`, {
                method: 'POST',
                headers: {
                 'content-type': 'application/json'
@@ -58,7 +58,7 @@ const Purchase = () => {
             
            newQuantity = (product.productQuantity - quantity) ;
 
-           fetch(`http://localhost:5000/product/${id}`,{
+           fetch(`https://glacial-wave-27081.herokuapp.com/product/${id}`,{
                method:'PATCH',
                headers: {
                 'content-type': 'application/json'

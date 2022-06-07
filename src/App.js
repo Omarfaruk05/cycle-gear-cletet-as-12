@@ -20,6 +20,7 @@ import ManageProducts from './Pages/Dashboard/ManageProducts';
 import Payment from './Pages/Dashboard/Payment';
 import MyProfile from './Pages/Dashboard/MyProfile';
 import ManageAllOrders from './Pages/Dashboard/ManageAllOrders';
+import NotFound from './Pages/NotFound/NotFound';
 
 function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
               <Purchase></Purchase>
             </ProtectedRoute>
           }></Route>
+          <Route path='*' element={<NotFound></NotFound>}></Route>
         </Routes>
         <Footer></Footer>
         

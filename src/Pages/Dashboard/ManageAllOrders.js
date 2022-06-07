@@ -5,7 +5,7 @@ import ManageAllOrderRow from './ManageAllOrderRow';
 
 const ManageAllOrders = () => {
 
-    const {data: allOrders, isLoading, refetch} = useQuery('allOrders', () => fetch(`http://localhost:5000/allOrders`,
+    const {data: allOrders, isLoading, refetch} = useQuery('allOrders', () => fetch(`https://glacial-wave-27081.herokuapp.com/allOrders`,
     {
         method: 'GET',
         headers: {

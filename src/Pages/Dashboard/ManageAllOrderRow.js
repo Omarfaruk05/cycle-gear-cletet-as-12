@@ -6,7 +6,7 @@ const ManageAllOrderRow = ({allOrder, index, refetch}) => {
     const {_id} = allOrder;
     
     const handleShipped = (id) => {
-        fetch(`http://localhost:5000/allOrders/${id}`, {
+        fetch(`https://glacial-wave-27081.herokuapp.com/allOrders/${id}`, {
             method: 'PATCH',
             headers: {
               'content-type': 'application/json',

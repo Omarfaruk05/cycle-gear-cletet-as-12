@@ -2,7 +2,6 @@ import React from 'react';
 
 const ProductRow = ({product, refetch, setDeletingProduct}) => {
     const { productImg, productName, productQuantity, price} = product;
-
    
     return (
         <tr>

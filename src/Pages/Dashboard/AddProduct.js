@@ -32,7 +32,7 @@ const AddProduct = () => {
                     price: data.price
                 }
 
-                fetch('http://localhost:5000/product', {
+                fetch('https://glacial-wave-27081.herokuapp.com/product', {
                     method: 'POST',
                     headers: {
                         'content-type': 'application/json',

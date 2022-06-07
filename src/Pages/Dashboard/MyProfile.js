@@ -11,7 +11,7 @@ const MyProfile = () => {
     const [user] = useAuthState(auth);
     const { handleSubmit, register, reset} = useForm();
 
-    const { data: currentUser, isLoading, refetch  } = useQuery('currentUser', () =>fetch(`http://localhost:5000/user/${user.email}`).then(res=>res.json())
+    const { data: currentUser, isLoading, refetch  } = useQuery('currentUser', () =>fetch(`https://glacial-wave-27081.herokuapp.com/user/${user.email}`).then(res=>res.json())
     )
 
     if(isLoading){
@@ -27,7 +27,7 @@ const MyProfile = () => {
 
       const updateUser = {name, address, phoneNumber, socialLink}
 
-      fetch(`http://localhost:5000/user/${email}`,{
+      fetch(`https://glacial-wave-27081.herokuapp.com/user/${email}`,{
         method:'PATCH',
         headers: {
          'content-type': 'application/json'
