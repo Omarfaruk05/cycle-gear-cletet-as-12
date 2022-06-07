@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Review = ({review}) => {
     const {name, comment, ratting, photo} = review;
     return (
-        <div className=''>
+        <div>
             <div class="card max-w-lg bg-base-100 shadow hover:shadow-2xl h-96">
                 <div class="avatar mt-8">
                     <div class="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 mx-auto">

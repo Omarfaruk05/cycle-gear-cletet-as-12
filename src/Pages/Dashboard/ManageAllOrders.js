@@ -19,7 +19,7 @@ const ManageAllOrders = () => {
         return <Loading></Loading>
     }
     return (
-        <div>
+        <div data-aos="zoom-in" data-aos-duration="1000">
             <h3 className='text-center text-secondary text-3xl font-semibold'>Manage All Orders</h3>
             <div class="overflow-x-auto">
                 <table class="sm:table table-zebra w-full">

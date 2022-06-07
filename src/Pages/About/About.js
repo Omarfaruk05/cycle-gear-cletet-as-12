@@ -30,24 +30,30 @@ const About = () => {
                 <div className="card-body">
                 <img src= {website2}  alt=""/>
                 </div>
-                <div>
-                    <a href="https://electro-mart-36ca8.web.app/manageInventory" alt=""> Site link</a>
+                <div className='w-full text-center mb-2'>
+                   <button className='btn btn-xs btn-primary'>
+                        <a target={'_blank'} href="https://electro-mart-36ca8.web.app/" alt=""> Site link</a>
+                   </button>
                 </div>
             </div>
             <div className="card bg-base-100 shadow-xl">
                 <div className="card-body">
                 <img src= {website3}  alt=""/>
                 </div>
-                <div>
-                    <a href="https://fr-photography.web.app/" alt=""> Site link</a>
+                <div className='w-full text-center mb-2'>
+                    <button className='btn btn-xs btn-primary'>
+                        <a target={'_blank'} href="https://fr-photography.web.app/" alt=""> Site link</a>
+                    </button>
                 </div>
             </div>
             <div className="card bg-base-100 shadow-xl">
                 <div className="card-body">
                     <img src={website1} alt="" />
                 </div>
-                <div>
-                    <a href="https://fr-photography.web.app/" alt=""> Site link</a>
+                <div className='w-full text-center mb-2'>
+                    <button className='btn btn-xs btn-primary'>
+                        <a target={'_blank'} href="https://fr-photography.web.app/" alt=""> Site link</a>
+                    </button>
                 </div>
             </div>
         </div>

@@ -12,7 +12,7 @@ const ManageProducts = () => {
         return <Loading></Loading>
     }
     return (
-        <div>
+        <div data-aos="zoom-in" data-aos-duration="1000">
             <h2 className='text-3xl text-secondary text-center font-semibold'>Manage Products: {products.length}</h2>
             <div class="overflow-x-auto">
                 <table class="sm:table table-zebra w-full">

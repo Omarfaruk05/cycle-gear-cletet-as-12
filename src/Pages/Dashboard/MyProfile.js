@@ -47,7 +47,7 @@ const MyProfile = () => {
     return (
         <div className='bg-base-300 px-4 pt-4 '>
            <div className='grid grid-cols-1 md:grid-cols-2 gap-2'>
-                <div className='w-full mx-auto'>
+                <div data-aos="fade-right" data-aos-duration="1000" className='w-full mx-auto'>
                     <h1 className='text-primary text-center text-3xl font-bold '>Profile Info </h1>
                     <h3 className='text-xl font-semibold '>Your Name: <span className='text-secondary'>{user.displayName}</span></h3>
                     <h3 className='text-xl font-semibold '>Your Email: <span className='text-secondary'>{currentUser.email}</span></h3>
@@ -55,7 +55,7 @@ const MyProfile = () => {
                     <h3 className='text-xl font-semibold '>Your Phone Number: <span className='text-secondary'>{currentUser.phoneNumber}</span></h3>
                     <h3 className='text-xl font-semibold '>Your Social Link: <span className='text-secondary text-sm'>{currentUser.socialLink}</span></h3>
                 </div>
-                <div className='bg-white rounded-lg shadow-lg p-4 w-full max-w-full mx-auto'>
+                <div data-aos="fade-left" data-aos-duration="1000" className='bg-white rounded-lg shadow-lg p-4 w-full max-w-full mx-auto'>
                     <form onSubmit={handleSubmit(onSubmit)} className='grid grid-cols-1 gap-3 justify-items-center mt-2'>
                         <label className='text-xl font-semibold text-secondary' htmlFor="">Update Profile</label>
 

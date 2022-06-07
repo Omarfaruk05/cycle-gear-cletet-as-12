@@ -3,6 +3,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { useForm } from 'react-hook-form';
 import { useQuery } from 'react-query';
 import { useParams } from 'react-router-dom';
+import { toast } from 'react-toastify';
 import auth from '../../firebase.init';
 import Loading from '../Shared/Loading';
 
@@ -67,15 +68,16 @@ const Purchase = () => {
            })
            .then(res => res.json())
            .then(data1 => {
-            refetch();
-            reset();
+                toast.success('Successfully Product Purchased');
+                refetch();
+                reset();
            })
        }
    }
     return (
         <div className='bg-base-300 xl:h-full'>
             <div className='md:flex m-4 lg:m-8'>
-                <div class="card lg:card-side bg-base-100 shadow-xl md:w-2/3 items-center justify-items-center m-4">
+                <div data-aos="fade-right" data-aos-duration="1000" class="card lg:card-side bg-base-100 shadow-xl md:w-2/3 items-center justify-items-center m-4">
                     <div className='sm:w-1/3 p-4 flex justify-between items-center'>
                         <img className='rounded-xl' src={product.productImg} alt="product" />
                     </div>
@@ -92,7 +94,7 @@ const Purchase = () => {
                         
                     </div>
                 </div>
-                <div className='md:w-1/3 ml-4 m-4'>
+                <div data-aos="fade-left" data-aos-duration="1000" className='md:w-1/3 ml-4 m-4'>
                     <div className='bg-white rounded-lg shadow-lg p-4'>
                         <form onSubmit={handleSubmit(onSubmit)} className='grid grid-cols-1 gap-3 justify-items-center mt-2'>
 

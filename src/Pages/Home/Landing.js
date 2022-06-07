@@ -7,8 +7,8 @@ const Landing = () => {
           <div class="hero-overlay bg-opacity-0"></div>
             <div class="hero-content text-center text-neutral-content">
               <div class="max-w-screen px-8">
-                <h1 class="mb-5 text-5xl md:text-7xl font-sans  font-bold text-orange-400 ">Wellcome to <span className='text-primary'>Cycle Gear</span></h1>
-                <h4 class="mb-5 text-2xl font-serif font-medium text-neutral lg:w-[600px] mx-auto">We are providing orginal cycle parts. Here you can find original shimano products.Here you can order at any time at any palce. Ovar all we provide our best services.</h4>
+                <h1 data-aos="fade-up" data-aos-easing="ease-out-cubic"data-aos-duration="1000"  class="mb-5 text-5xl md:text-7xl font-sans  font-bold text-orange-400 ">Wellcome to <span className='text-primary'>Cycle Gear</span></h1>
+                <h4 data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-delay="300" class="mb-5 text-2xl font-serif font-medium text-neutral lg:w-[600px] mx-auto">We are providing orginal cycle parts. Here you can find original shimano products.Here you can order at any time at any palce. Ovar all we provide our best services.</h4>
                 <button class="btn btn-primary text-white">Get Started</button>
               </div>
             </div>

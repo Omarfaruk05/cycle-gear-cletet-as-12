@@ -35,7 +35,7 @@ const MyOrders = () => {
     }
 
     return (
-        <div>
+        <div data-aos="zoom-in" data-aos-duration="1000">
             <h1 className='text-center text-3xl text-secondary font-semibold'>My Orders</h1>
             <div class="overflow-x-auto">
                 <table class="sm:table table-zebra w-full">

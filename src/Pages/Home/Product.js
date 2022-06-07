@@ -19,7 +19,7 @@ const Product = ({product}) => {
                 </h2>
                 <h3 className='text-md font-semibold text-center'>Quantity: <span className='text-secondary'>{productQuantity}</span></h3>
                 <p className='text-center font-semibold'>Price: $<span className='text-secondary'>{price}</span></p>
-                <button onClick={() => navigateToPurchase(_id)} className='btn btn-outline btn-primary'>Purchase</button>
+                <button onClick={() => navigateToPurchase(_id)} className='btn btn-outline btn-primary'>Buy Now</button>
                 
             </div>
         </div>
